@@ -476,7 +476,7 @@
 
           var img = new Image();
           var url;
-          fetch(fileurl)
+          fetch(fileurl, { mode: "no-cors" })
             .then((response) => {
               if (!response.ok) {
                 throw new Error(
